@@ -9,7 +9,9 @@ function Rodape() {
         <footer>
             <ul>
                 <li>
-                    <a href="#"></a>
+                    <a>
+                        <img src={facebook} alt="logo do facebook"/>
+                    </a>
                 </li>
             </ul>
         </footer>
