@@ -4,9 +4,17 @@ import coinstagramnsulta from './assets/instagram.png';
 import google from './assets/google.png';
 import styled from 'styled-components';
 
+const RodapeEstilizado = styled.footer`
+    height: 100%;
+    color: white;
+    padding: 1em;
+    background-color: var(--azul-escuro);
+    text-align: center
+`
+
 function Rodape() {
     return(
-        <footer>
+        <RodapeEstilizado>
             <ul>
                 <li>
                     <a>
@@ -14,6 +22,8 @@ function Rodape() {
                     </a>
                 </li>
             </ul>
-        </footer>
+        </RodapeEstilizado>
     )
 }
+
+export default Rodape;
