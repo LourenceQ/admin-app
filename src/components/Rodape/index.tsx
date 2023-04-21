@@ -4,6 +4,13 @@ import coinstagramnsulta from './assets/instagram.png';
 import google from './assets/google.png';
 import styled from 'styled-components';
 
+const ListaEstilizada = styled.ul`
+    display: flex;
+    justify-content: space-around;
+    width: 10%;
+    margin: 1em auto;
+`
+
 const RodapeEstilizado = styled.footer`
     height: 100%;
     color: white;
@@ -15,13 +22,14 @@ const RodapeEstilizado = styled.footer`
 function Rodape() {
     return(
         <RodapeEstilizado>
-            <ul>
+            <ListaEstilizada>
                 <li>
                     <a>
                         <img src={facebook} alt="logo do facebook"/>
                     </a>
                 </li>
-            </ul>
+            </ListaEstilizada>
+            <p> 2023 Desenvolvido por Alura | Projeto fictício sem fins comerciais. </p>
         </RodapeEstilizado>
     )
 }
