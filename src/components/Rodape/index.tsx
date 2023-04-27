@@ -19,12 +19,16 @@ const RodapeEstilizado = styled.footer`
     text-align: center
 `
 
+const itemEstilizado = styled.li`
+    list-style-type: none;
+`
+
 function Rodape() {
     return(
         <RodapeEstilizado>
             <ListaEstilizada>
                 <li>
-                    <a>
+                    <a href="#">
                         <img src={facebook} alt="logo do facebook"/>
                     </a>
                 </li>
