@@ -8,5 +8,7 @@ export default function useFetch<T>({url} : {url: string}) {
         fetch(`http://localhost:8080/$(url)`).then(
             response => response.json()
         ).then(dados => setDados(dados)).catch((erro => setErro(erro)))
-    })
+    }, [url])
+
+    return {dados, erro}
 }
