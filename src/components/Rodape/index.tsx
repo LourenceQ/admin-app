@@ -1,6 +1,6 @@
 import facebook from './assets/facebook.png';
 import whatsapp from './assets/whatsapp.png';
-import coinstagramnsulta from './assets/instagram.png';
+import instagram from './assets/instagram.png';
 import google from './assets/google.png';
 import styled from 'styled-components';
 
@@ -19,19 +19,34 @@ const RodapeEstilizado = styled.footer`
     text-align: center
 `
 
-const itemEstilizado = styled.li`
-    list-style-type: none;
+const ItemEstilizado = styled.li`
+list-style-type: none;
 `
 
 function Rodape() {
     return(
         <RodapeEstilizado>
             <ListaEstilizada>
-                <li>
+                <ItemEstilizado>
                     <a href="#">
                         <img src={facebook} alt="logo do facebook"/>
                     </a>
-                </li>
+                </ItemEstilizado>
+                <ItemEstilizado>
+                    <a href="#">
+                    <img src={whatsapp} alt="logo do facebook"/>
+                    </a>
+                </ItemEstilizado>
+                <ItemEstilizado>
+                    <a href="#">
+                    <img src={instagram} alt="logo do facebook"/>
+                    </a>
+                </ItemEstilizado>
+                <ItemEstilizado>
+                    <a href="#">
+                    <img src={google} alt="logo do facebook"/>
+                    </a>
+                </ItemEstilizado>
             </ListaEstilizada>
             <p> 2023 Desenvolvido por Alura | Projeto fictício sem fins comerciais. </p>
         </RodapeEstilizado>
