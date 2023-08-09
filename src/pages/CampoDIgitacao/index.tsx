@@ -11,15 +11,30 @@ const Campo = styled.input`
     padding: 16px;
 `
 
+const Rotulo = styled.label`
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--azul-escuro);
+`
+
+const Container = styled.div`
+    width=100%;
+`
+
 interface Props {
     valor: string,
     tipo: string,
     placeholder: string,
-    onChange: (value: string) => void;
+    onChange: (value: string) => void,
+    label?: string
 }
 
-export default function CampoDigitacao({valor, tipo, placeholder, onChange} : Props) {
+export default function CampoDigitacao({valor, tipo, placeholder, onChange, label} : Props) {
     return (
+        <Container>
+        <Rotulo>{label}</Rotulo>
         <Campo 
             type={tipo}
             value={valor}
@@ -27,5 +42,6 @@ export default function CampoDigitacao({valor, tipo, placeholder, onChange} : Pr
             onChange={(e) => onChange(e.target.value)}
             required
         />
+        </Container>
     );
 }
